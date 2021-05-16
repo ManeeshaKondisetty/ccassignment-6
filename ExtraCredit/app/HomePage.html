@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="HomePage.js"></script>
+<h1>Compare Cars Sold in Auction</h1>
+<label for="one_cars">Select 1st Car:</label>
+<select name="cars" id="one_cars" >
+    <option value="CHEVROLET">CHEVROLET</option>
+    <option value="" disabled SELECTED hidden>Select One</option>
+    <option value="HYUNDAI">HYUNDAI</option>
+    <option value="FORD">FORD</option>
+    <option value="NISSAN">NISSAN</option>
+    <option value="BUICK">BUICK</option>
+    <option value="HONDA">HONDA</option>
+</select>
+
+<label for="two_cars">Select 2nd Car:</label>
+
+<select name="cars" id="two_cars">
+    <option value="HYUNDAI">HYUNDAI</option>
+    <option value="" disabled SELECTED hidden>Select One</option>
+    <option value="FORD">FORD</option>
+    <option value="NISSAN">NISSAN</option>
+    <option value="BUICK">BUICK</option>
+    <option value="HONDA">HONDA</option>
+    <option value="CHEVROLET">CHEVROLET</option>
+</select>
+
+<button type="button" id="compare" onclick="getData()">Compare</button>
+
+<br>
+
+<canvas id="myCanvas" style="background: white;"></canvas>
+<legend for="myCanvas"></legend>
+
+</body>
+</html>
