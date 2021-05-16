@@ -1,3 +1,18 @@
+'use strict';
+
+angular.module('myApp.view1', ['ngRoute'])
+
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/view1', {
+    templateUrl: 'view1/view1.html',
+    controller: 'View1Ctrl'
+  });
+}])
+
+.controller('View1Ctrl', [function() {
+
+}]);
+
 function getData() {
   var firstCar = document.getElementById('one_cars').value;
   var secondCar = document.getElementById('two_cars').value;
@@ -151,3 +166,4 @@ var Barchart = function(options){
     }
   }
 }
+
